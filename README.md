@@ -22,7 +22,7 @@ This script is designed to brute force login credentials for the [BWAPP](https:/
 3. **Run the Script**: Run the script with the following command:
 
     ```bash
-    python brute_force.py
+    python bruteforce.py
     ```
 
 4. **Enter Required Information**: The script will ask for the following input:
