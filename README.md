@@ -1,19 +1,28 @@
-# BWAPP Brute Force Script
+# 🔐 BWAPP Brute Force Script
 
 This script is designed to brute force login credentials for the [BWAPP](https://bwapp.hakhub.net/login.php) website. The script tries different passwords from a provided list and attempts to log in using a known username (`admin`). It is a simple demonstration of how a brute force attack works on web applications and should only be used for educational purposes on platforms where you have permission to test.
 
-**Disclaimer:** This script should only be used on sites or applications where you have explicit permission to perform security testing. Unauthorized access to systems or accounts is illegal and unethical.
+⚠️ **Disclaimer:** This script should only be used on sites or applications where you have explicit permission to perform security testing. Unauthorized access to systems or accounts is illegal and unethical.
 
 ---
 
-## Requirements
+## ✅ Requirements
 
-- Python 3.x
-- `requests` library (install it via `pip install requests`)
+- 🐍 Python 3.x
+- 📦 `requests` library (install it via `pip install requests`)
 
 ---
 
-## Usage
+## 🛠️ Setup
+
+1. Clone or download this repository to your local machine:
+   ```bash
+   git clone https://github.com/fadlyfatih1/simple-bruteforce
+   cd simple-bruteforce
+
+---
+
+## 📖 Usage
 
 1. **Create an account**: Visit the [BWAPP](https://bwapp.hakhub.net/login.php) website and register a new account if you haven't already.
    
@@ -35,7 +44,7 @@ This script is designed to brute force login credentials for the [BWAPP](https:/
 
 ---
 
-## Example
+## 🖥️ Example
 
 Here is an example of running the script:
 
@@ -45,13 +54,13 @@ Here is an example of running the script:
 [+] Enter Password File To Use: password.txt
 ```
 
-## Script Logic
+## 🔍 Script Logic
 
    - The script will read the password file line by line.
    - For each password, it will attempt to login using the POST method with the provided username and password.
    - If the login attempt fails (based on the failed login string you provided), it will continue to the next password.
    - If it finds a valid login (i.e., no failed login string in the response), it will print the correct username and password.
 
-## Important Notes
+## 📌 Important Notes
    - Only use this script for educational purposes and on platforms where you have permission to perform security testing (e.g., bug bounty programs or your own lab environment).
    - Brute-forcing websites without permission is illegal and unethical.
